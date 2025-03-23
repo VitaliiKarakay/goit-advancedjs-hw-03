@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_KEY = import.meta.env.VITE_API_KEY;
+const API_KEY = '49486177-f5d6b48135fe4ab0dc5f3c055';
 const BASE_URL = 'https://pixabay.com/api/';
 const IMAGE_TYPE = 'photo';
 const ORIENTATION = 'horizontal';
