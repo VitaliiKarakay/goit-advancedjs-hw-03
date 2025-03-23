@@ -13,6 +13,7 @@ jobs:
 
       - name: Install and build 🔧
         run: |
+          echo "VITE_API_KEY=${{ secrets.API_KEY }}" >> .env
           npm install
           npm run build
 
