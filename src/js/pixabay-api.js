@@ -6,6 +6,8 @@ const IMAGE_TYPE = 'photo';
 const ORIENTATION = 'horizontal';
 const SAFESEARCH = true;
 
+console.log(`${API_KEY}`);
+
 export async function fetchImages(query) {
   const url = `${BASE_URL}?key=${API_KEY}&q=${encodeURIComponent(
     query
