@@ -19,11 +19,11 @@ jobs:
           cat .env
           npm install
           npm run build
+        env:
+          VITE_API_KEY: ${{ secrets.API_KEY }}
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.0
         with:
           branch: gh-pages
           folder: dist
-        env:
-         API_KEY: ${{ secrets.API_KEY }}
